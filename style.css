@@ -8,11 +8,8 @@ body {
   line-height: 2rem;
   font-size: 1.5rem;
 }
-header{
-    width: 95vmax;
-}
 header , header nav, header nav ul, header nav ul li{
-  display: inline-block;
+  display: inline;
 }
 header img {
   height: 100px;
@@ -23,13 +20,11 @@ header img {
   margin-bottom: 0;
 }
 header nav li{
-    width: 230px;
-}
-header nav li{
     padding-left: 17vmin;
 }
  header nav li:first-child{
-    margin-left: 70vmin;
+   position: relative;
+    margin-left: 30vmax;
 }
 header nav a{
     list-style-type: none;
