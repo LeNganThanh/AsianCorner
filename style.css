@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: beige;
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+header{
+    width: 95vmax;
+}
+header , header nav, header nav ul, header nav ul li{
+  display: inline-block;
+}
+header img {
+  height: 100px;
+  border: 1px solid rgb(4, 5, 87);
+  border-radius: 5px;
+  box-shadow: -2px 2px rgb(62, 65, 218);
+  margin: 20px;
+  margin-bottom: 0;
+}
+header nav li{
+    width: 230px;
+}
+header nav li{
+    padding-left: 17vmin;
+}
+ header nav li:first-child{
+    margin-left: 70vmin;
+}
+header nav a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+header nav a:visited{
+    color: rgb(31, 16, 16);
+}
+header nav a:hover{
+    background-color: rgb(212, 252, 252);
+    color: blue;
+}
+header nav a:active{
+    color: rgb(27, 104, 27);
+}
+main {
+  width: 100%;
+  height: 90%;
+  max-width:1000px;
+  margin: 50px auto;
+}
+.intro {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 60%;
+    height: 17vh;
+    margin: 5vh auto;
+    align-items: center;
+}
+.intro input{
+    height: 4vh;
+    width: 40vmin;
+    font-size: 1rem;
+}
+.intro button{
+    width: 90px;
+    height: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: rgb(248, 224, 164);
+    margin: 10px;
+    position: relative;
+    left: 15vmin;
+    border: 1px solid rgb(58, 43, 5);
+    box-shadow: 1px 1px gold;
+    border-radius: 5px;
+}
+.intro a{
+  text-decoration: none;
+}
+.intro a:visited{
+  color: darkblue;
+}
+.intro button a:hover{
+  color: brown;
+}
+.intro button a:focus{
+  background-color: aquamarine;
+}
+#feature div{
+    display: inline;
+}
+#feature {
+  margin-top: 12vh;
+}
+#feature img {
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin: 10px 30px 20px 0px;
+}
+#feature div p{
+  margin-bottom: 7vh;
+}
+ iframe{
+  width: 30vmax;
+  height: 40vh;
+  margin-left: 25vmin;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+#price {
+  display: flex;
+  justify-content: space-between;
+}
+#price div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 15vmax;
+  height: 50vh;
+  border: 1px dashed rgb(110, 75, 8);
+  line-height: 2rem;
+}
+#price h3:first-child{
+  background-color: rgb(223, 219, 219);
+  width: inherit;
+  height: 50px;
+  align-items: flex-start;
+  text-align: center;
+ position: relative;
+  top: -67px;
+  padding-top: 10px;
+}
+#price p{
+  width: 50%;
+  text-align: center;
+  margin: 20px 0px 30px;
+}
+#price div button{
+  width: 100px;
+  height: 30px;
+  font-size: 1.1rem;
+  background-color: rgb(110, 106, 109);
+  color: rgb(217, 231, 156);
+}
+footer nav {
+  display: inline;
+}
+footer nav ul, footer nav ul li{
+    display: inline-block;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer {
+    background-color: rgb(243, 236, 197);
+    width: 52vmax;
+  text-align: right;
+  margin: 20px auto;
+  padding: 10px;
+}
