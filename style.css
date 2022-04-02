@@ -8,8 +8,15 @@ body {
   line-height: 2rem;
   font-size: 1.5rem;
 }
-header , header nav, header nav ul, header nav ul li{
-  display: inline;
+/* setting header with navigation */
+header{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav{
+  display: flex;
+  flex-shrink: 1;
 }
 header img {
   height: 100px;
@@ -19,28 +26,22 @@ header img {
   margin: 20px;
   margin-bottom: 0;
 }
-header nav li{
-    padding-left: 17vmin;
-}
- header nav li:first-child{
-   position: relative;
-    margin-left: 30vmax;
-}
 header nav a{
     list-style-type: none;
     text-decoration: none;
     color: black;
+    padding: 3rem;
 }
 header nav a:visited{
     color: rgb(31, 16, 16);
 }
 header nav a:hover{
-    background-color: rgb(212, 252, 252);
     color: blue;
 }
 header nav a:active{
     color: rgb(27, 104, 27);
 }
+/* setting first section */
 main {
   width: 100%;
   height: 90%;
@@ -102,6 +103,7 @@ main {
 #feature div p{
   margin-bottom: 7vh;
 }
+/* insert video */
  iframe{
   width: 30vmax;
   height: 40vh;
@@ -109,29 +111,48 @@ main {
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
+/* setting price section */
 #price {
+  width: 95%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  margin: 0 auto;
 }
+@media  (min-width: 564px) { 
+  #price{
+    display: flex;
+    flex-direction: row;
+  }  
+  }
+  
 #price div {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  width: 15vmax;
+  width: 300px;
   height: 50vh;
   border: 1px dashed rgb(110, 75, 8);
   line-height: 2rem;
+  position: relative;
 }
 #price h3:first-child{
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: rgb(223, 219, 219);
-  width: inherit;
+  width: 100%;
   height: 50px;
   align-items: flex-start;
   text-align: center;
  position: relative;
-  top: -67px;
-  padding-top: 10px;
+  padding: 10px;
+  margin-top: 0;
+  font-size:  clamp(1.2rem,0.8rem + 1vw, 2rem) ;
+}
+#price h3:nth-child(2){
+  margin-top: 2rem;
 }
 #price p{
   width: 50%;
