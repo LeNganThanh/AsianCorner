@@ -119,12 +119,6 @@ main {
   justify-content: space-between;
   margin: 0 auto;
 }
-@media  (min-width: 564px) { 
-  #price{
-    display: flex;
-    flex-direction: row;
-  }  
-  }
   
 #price div {
   display: flex;
@@ -132,7 +126,7 @@ main {
   flex-direction: column;
   align-items: center;
   width: 300px;
-  height: 50vh;
+  height: 45vh;
   border: 1px dashed rgb(110, 75, 8);
   line-height: 2rem;
   position: relative;
@@ -157,7 +151,9 @@ main {
 #price p{
   width: 50%;
   text-align: center;
-  margin: 20px 0px 30px;
+  margin: 1.5rem 0;
+  font-size:  clamp(1rem,0.9rem + 1vw, 1.5rem) ;
+
 }
 #price div button{
   width: 100px;
@@ -166,8 +162,17 @@ main {
   background-color: rgb(110, 106, 109);
   color: rgb(217, 231, 156);
 }
+@media  (min-width: 564px) { 
+  #price{
+    display: flex;
+    flex-direction: row;
+
+  }  
+  }
+
 footer nav {
-  display: inline;
+  display: flex;
+  justify-content: flex-end;
 }
 footer nav ul, footer nav ul li{
     display: inline-block;
@@ -176,9 +181,18 @@ footer a{
     text-decoration: none;
     color: black;
 }
+footer nav a:visited{
+  color: rgb(31, 16, 16);
+}
+footer nav a:hover{
+  color: blue;
+}
+footer nav a:active{
+  color: rgb(27, 104, 27);
+}
 footer {
     background-color: rgb(243, 236, 197);
-    width: 52vmax;
+    width: 57vw;
   text-align: right;
   margin: 20px auto;
   padding: 10px;
